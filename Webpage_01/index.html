@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/5943604af0.js" crossorigin="anonymous"></script>
+    <script src="/gsap-public/minified/gsap.min.js"></script>
+    <title>Webpage</title>
+</head>
+<body>
+  <div class="cursor"></div>
+        <!-----------------HEADER----------------------->
+    <nav class="navbar justify-content-between">
+        
+        <!--LOGO--> 
+        <div class="container-logo ms-5">
+            <a class="brand" id="brand" href="index.html">LINGUSTO.</a>
+        </div>
+        <!--MENU-Punkte-->      
+        <div class="container-ul d-md-flex d-none  justify-content-between me-5">
+            <ul class="d-flex nav-items">
+                <li><a href="#" class="">HOME</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="/login.html">LOGIN</a></li>
+            </ul>
+            <div class="search d-none d-md-flex ">
+                <input type="text" placeholder="Search..." class="search-input ">
+                <button class="btn-search d-flex btn" >
+                    <i class="fa-solid fa-magnifying-glass" class="search-icon"></i>
+                </button>
+            </div>
+        </div>
+        <!--HAMBURGER-->    
+        <div class="menu-button d-flex d-md-none me-5" id="hamburger" onclick="animationHam()">
+            <span id="top" class="bar" ></span>
+            <span id="bottom" class="bar"></span>
+        </div>
+    </nav>
+    <!--Mobile Menu--> 
+    <div class="mobile_menu d-flex d-md-none ">
+        <ul class="">
+            <li class="ul_item"><a calss="nav-link" href="#" >Home</a></li>
+            <li class="ul_item"><a calss="nav-link" href="#" >Product</a></li>
+            <li class="ul_item"><a calss="nav-link" href="#" >About</a></li>
+            <li class="ul_item"><a calss="nav-link" href="#">Login</a></li>
+        </ul>
+     </div>
+
+    <div class="hero">
+        <video class="video" src="/bilder/video.mp4" autoplay loop muted>
+        </video>
+        <!--MITTIGER TEXT HERO-->   
+        <div class="container-hero container">
+            <h1 id="text" class="">ENABLING THE </h1>
+            <h1 id="add_text" class=""></h1>     
+            <p id="text2" class="">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Cupiditate, nam.</p>
+                <div class="container-btn">
+                    <button type="button" class="btn btn-light hero-button" id="btn" href="#">Pre-Order</button>
+                    <button type="button" class="btn btn-light light-button" id="btn" href="#">Discover-More</button>
+                </div>
+            </div>
+    </div>
+
+<!-- Content One-->  
+<section class="container-content text-center p-5 " id="content">
+    <h2 class="">Content One</h2>
+    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptates delectus quidem eveniet harum ratione? Adipisci 
+        laudantium obcaecati nulla minus quae et, sed iusto ipsa vero
+        eveniet ipsum, vel saepe. Esse doloribus excepturi eius quia 
+        laborum dolorem, cumque consectetur quos nam eligendi perferendis
+        assumenda ab architecto cupiditate et corrupti nesciunt, inventore
+        tempora aliquam veniam. Voluptatum, voluptatem fugit! Minus quas 
+        atque culpa facilis dicta natus, optio accusamus! Consequuntur 
+        consectetur expedita quasi, fugit accusamus magni explicabo minima 
+        voluptate vitae unde. Amet assumenda vitae quae sed sunt minima 
+        dolore voluptas maiores pariatur nulla corporis vel soluta optio, 
+        odio quam tempora dolores, ex illo alias!</p>
+   </section>
+<!-- Services-->  
+   <section class="services " id="content">
+    <div class="container text-center">
+      <h3 class="mb-3">SERVICES</h3>
+      <p class="text-muted mb-5">Wir bieten tolle Dienstleistungen an</p>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-4" >
+          <div class="service-icon"><i class="fa-solid fa-image"></i></div> 
+          <h4>E-Commerce</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+  
+        <div class="col-sm-12 col-md-4">
+          <div class="service-icon"><i class="fa-brands fa-tiktok"></i></div> 
+          <h4>Responsive Web</h4>
+          <p class="text-muted ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p> 
+        </div>
+  
+        <div class="col-sm col-md-4">
+          <div class="service-icon"><i class="fa-solid fa-shield "></i></div> 
+          <h4>Sicherheit</h4>
+           <p class="text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Two-->  
+   <section class="container-content text-center p-5 " id="content">
+    <h3 class="" id="heading1">Content Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur iure
+        porro, facere corporis atque deleniti dolorum aspernatur quia est earum excepturi 
+        ipsum quam et illo nostrum dolore, harum alias dicta odit, maiores vitae! Voluptates unde,
+        pariatur cumque nam consequuntur labore quibusdam reprehenderit magnam deserunt quo aperiam
+        eveniet qui molestiae? In, inventore voluptate. Ratione, impedit excepturi. Delectus tenetur
+        ullam ratione in quo, possimus, qui rem sit voluptas doloribus atque. Quo earum, adipisci enim
+        nesciunt sequi dolorem aperiam officiis eius esse optio dignissimos, illum repellat pariatur
+        temporibus voluptatibus natus autem asperiores porro corporis nisi officia quod facere, fugit
+        doloremque? Cumque, harum omnis?
+    </p>
+   </section>
+   <section class="container-content text-center p-5 " id="content">
+
+  <!-- Content Three-->  
+    <h3 class="" id="heading1">Content Three</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur iure
+        porro, facere corporis atque deleniti dolorum aspernatur quia est earum excepturi 
+        ipsum quam et illo nostrum dolore, harum alias dicta odit, maiores vitae! Voluptates unde,
+        pariatur cumque nam consequuntur labore quibusdam reprehenderit magnam deserunt quo aperiam
+        eveniet qui molestiae? In, inventore voluptate. Ratione, impedit excepturi. Delectus tenetur
+        ullam ratione in quo, possimus, qui rem sit voluptas doloribus atque. Quo earum, adipisci enim
+        nesciunt sequi dolorem aperiam officiis eius esse optio dignissimos, illum repellat pariatur
+        temporibus voluptatibus natus autem asperiores porro corporis nisi officia quod facere, fugit
+        doloremque? Cumque, harum omnis?
+    </p>
+   </section>
+
+
+  <!-- Contact-->  
+   <section class="contact p-3" id="contactus">
+      <div class="container text-center">
+        <h3 class="mb-3 mt-5">Contact US</h3>
+        <p class="text-center text-muted font-italic mb-5">At vero eos et accusam et justo duo dolores</p>
+      </div>
+      <form method="get" action="#">
+        <div class="container mb-5">
+          <div class="row">
+              <div class="col-12 col-sm-6">
+                <input type="text" name="name" placeholder="First Name *" class="form-control mb-3" required>
+                <input type="email" name="email" placeholder="Last Name *"  class="form-control mb-3" required>
+                <input type="text" name="email" placeholder="E-Mail *" class="form-control mb-3 mb-sm-0" required>
+              </div>
+            <div class="col-12 col-sm-6 ">
+              <textarea name="message" placeholder="Your Message *" required class="form-control text-message"></textarea>
+            </div>
+          </div>
+            <div class="container-btn">
+              <button type="button" class="btn btn-light hero-button mt-3" id="btn" data-bs-toggle="button" href="#" >Submit</button>
+            </div>
+      
+          </div>
+      </form>
+  </Section>
+
+ <!-- Footer -->  
+  <footer class="footer" id="footer_page">
+    <div class="row text-center ">
+      <div class="col col-md-4" style="width: 500px;">
+        <p class="mb-0 copyright">Copyright© Julian Etessam. All rights reserved</p>
+      </div>
+      
+    </div>
+  
+</footer>
+
+
+    <script src="/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
